@@ -43,6 +43,15 @@ nav {
     margin: 0;
 }
 
+a {
+    text-decoration: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
+
 .nav-ul {
     display: flex;
     justify-content: space-evenly;
@@ -60,7 +69,7 @@ nav {
 
 }
 
-.nav-li:hover {
+.nav-li {
     display: inline-block;
     font-size: 25px;
     color: hotpink;
