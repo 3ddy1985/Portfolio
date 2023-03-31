@@ -23,28 +23,40 @@ headings.forEach(heading => {
 
 
 
-// const letters = document.querySelectorAll(".hero-heading span");
-
-// letters.forEach(letter => {
-//   letter.setAttribute("draggable", "true");
-//   letter.addEventListener("dragstart", dragStart);
-//   letter.addEventListener("dragend", dragEnd);
-// });
-
-// let initialX = 0;
-// let initialY = 0;
-
-// function dragStart(e) {
-//   initialX = e.clientX - e.target.offsetLeft;
-//   initialY = e.clientY - e.target.offsetTop;
-//   e.dataTransfer.setData("text/plain", e.target.id);
-// }
-
-// function dragEnd(e) {
-//   e.target.style.left = e.clientX - initialX + "px";
-//   e.target.style.top = e.clientY - initialY + "px";
-//   e.target.style.position = "absolute";
-// }
 
 
+
+
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+
+  function showSlide(n) {
+    if (n >= slides.length) {
+      slideIndex = 0;
+    }
+    if (n < 0) {
+      slideIndex = slides.length - 1;
+    }
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+    slides[slideIndex].style.display = "flex";
+  }
+
+  function changeSlide(n) {
+    showSlide((slideIndex += n));
+  }
+
+  prevButton.addEventListener("click", () => changeSlide(-1));
+  nextButton.addEventListener("click", () => changeSlide(1));
+
+  function autoSlide() {
+    changeSlide(1);
+    setTimeout(autoSlide, 5000);
+  }
+
+  showSlide(slideIndex);
+  autoSlide();
 
