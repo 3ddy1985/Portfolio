@@ -54,3 +54,4 @@ function automaticSlider() {
 updateSlides();
 automaticSlider();
 
+
