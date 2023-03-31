@@ -26,37 +26,31 @@ headings.forEach(heading => {
 
 
 
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".slide");
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
+function moveSlides(n) {
+  slideIndex += n;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  if (slideIndex >= slides.length) slideIndex = 0;
+  updateSlides();
+}
 
-  function showSlide(n) {
-    if (n >= slides.length) {
-      slideIndex = 0;
-    }
-    if (n < 0) {
-      slideIndex = slides.length - 1;
-    }
-    slides.forEach((slide) => {
-      slide.style.display = "none";
-    });
-    slides[slideIndex].style.display = "flex";
+function updateSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  slides[slideIndex].style.display = "block";
+}
 
-  function changeSlide(n) {
-    showSlide((slideIndex += n));
-  }
+function automaticSlider() {
+  slideIndex++;
+  if (slideIndex >= slides.length) slideIndex = 0;
+  updateSlides();
+  setTimeout(automaticSlider, 5000); // Change the time in milliseconds for slide duration
+}
 
-  prevButton.addEventListener("click", () => changeSlide(-1));
-  nextButton.addEventListener("click", () => changeSlide(1));
-
-  function autoSlide() {
-    changeSlide(1);
-    setTimeout(autoSlide, 5000);
-  }
-
-  showSlide(slideIndex);
-  autoSlide();
+// Start the slider
+updateSlides();
+automaticSlider();
 

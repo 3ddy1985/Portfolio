@@ -440,25 +440,32 @@ span:hover {
   }
   
 
-  .controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
   
-  .controls button {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: rgb(27, 27, 27);
-    cursor: pointer;
-    padding: 0 10px;
-  }
   
-  .controls button:focus {
-    outline: none;
-  }
+
+
+/* ...previous CSS code... */
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: hotpink;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+
+.slider-control.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.slider-control.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
   
