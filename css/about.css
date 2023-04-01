@@ -1,0 +1,166 @@
+.slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+}
+  
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+  
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.slide-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-content p {
+  color: rgb(114, 114, 114);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+  
+.slider-control {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: rgb(58, 57, 57);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+
+.slider-control.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.slider-control.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+.padding-50 {
+  padding: 80px;
+}
+
+.about-me-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.slide-img {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* .diagonal-div {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.diagonal-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  transform-origin: bottom right;
+  transform: skewX(15deg);
+} */
+
+.diagonal-div {
+  position: absolute;
+  margin: 10px 10px 20px 0;
+  padding: 30px;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: calc(100% - 20px);
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%);
+  text-align: center;
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform-origin: bottom right;
+  transform: skewX(15deg);
+  opacity: 0;
+  animation: imageSlider 16s infinite;
+}
+
+.image1 {
+  background-image: url('https://images.theconversation.com/files/417362/original/file-20210823-27-1qatupq.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop');
+  animation-delay: 0s;
+}
+.image2 {
+  background-image: url('https://www.canr.msu.edu/contentAsset/image/43e68b88-c4a2-438b-b83b-4f0a2eed5460/fileAsset/filter/Resize,Jpeg/resize_w/750/jpeg_q/80');
+  animation-delay: 4s;
+}
+.image3 {
+  background-image: url('https://www.everythingreptiles.com/wp-content/uploads/2020/04/Most-Popular-Pet-Snakes.jpg');
+  animation-delay: 8s;
+}
+.image4 {
+  background-image: url('https://onceinawild.com/wp-content/uploads/2021/02/Matilda1.jpg');
+  animation-delay: 12s;
+}
+
+@keyframes imageSlider {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+}
+
+

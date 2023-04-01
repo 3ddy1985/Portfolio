@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #141414ad;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item {
+    margin: 0 25px;
+    width: 150px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+/* .navbar .navbar-nav .nav-item .active {
+    color: hotpink;
+} */
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: hotpink;
+    border-bottom: hotpink solid 1px;
+}

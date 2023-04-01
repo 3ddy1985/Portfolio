@@ -1,237 +1,67 @@
+@import url(css/nav.css);
+@import url(css/hero.css);
+@import url(css/about.css);
+@import url(css/skills.css);
+@import url(css/projects.css);
+@import url(css/contact.css);
+
 body {
-    background-color: #141414;
-    color: rgb(114, 114, 114);
-    font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: #141414;
+  color: rgb(114, 114, 114);
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 section {
-    margin: 0;
-    padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-/* Nav */
-.navbar {
-    background-color: #141414ad;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+.bg-pink {
+  background-color: rgb(252, 102, 177);
 }
 
-.nav-item {
-    margin: 0 25px;
-    width: 150px;
-    text-align: center;
-    transform: translateX(-50%);
+.bg-dark {
+  background-color: #141414;
 }
 
-.nav-link {
-    color: hotpink;
-    
+.pink-font {
+  color: rgb(252, 102, 177);
 }
 
-.navbar .navbar-nav .nav-item .active {
-    color: hotpink;
+.dark-font {
+  color: #141414;
 }
 
-.navbar .navbar-nav .nav-item .nav-link:hover {
-    color: hotpink;
-    border: hotpink solid 1px;
+.light-font {
+  color: rgb(114, 114, 114);
 }
 
-/* Nav end */
-
-/* Hero */
-.hero-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
-.hero-container {
-    text-align: left;
-    max-width: 1300px;
-    margin: auto;
-    transition: transform 0.5s ease-out;
-}
-
-.heading-box {
-    /* padding: 20px; */
-
-    position: relative;
-}
-
-.hero-heading,
-.hero-heading-2,
-.hero-heading-3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: hotpink!important;
-    padding: 0;
-    margin: 0;
-    line-height: 0.9;
-}
-
-.hero-heading {
-    font-size: 14vw;
-    font-weight: 900;
-    line-height: 0.82;
-}
-
-.hero-heading-2,
-.hero-heading-3 {
-    font-size: 2vw;
-    margin-left: 17px;
-}
-
-.hero-heading span {
-    line-height: 0.82;
-}
-
-.header-text,
-span:hover {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: url('https://analyticsindiamag.com/wp-content/uploads/2021/08/ml-cybersecurity.gif');
-    line-height: 0.82;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-heading-2,
-.hero-heading,
-.hero-heading-3,
-.cta-button,
-.c1,
-.c2,
-.c3,
-.c4,
-.c5 {
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards;
-}
-
-.hero-heading-2,
-.c1 {
-    animation-delay: 0.3s;
-}
-
-.hero-heading,
-.c2 {
-    animation-delay: 0.8s;
-}
-
-.hero-heading-3,
-.c3 {
-    animation-delay: 1.3s;
-}
-
-.c4 {
-    animation-delay: 1.8s;
-}
-
-#hero-corner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 500px;
-    height: 350px;
-    border-top: #ff69b4 solid 4px;
-    border-right: #ff69b4 solid 4px;
-}
-
-.hero-corner-border {
-    padding: 15px;
-    height: 72%;
-    border-top: #ff69b4 solid 4px;
-    border-right: #ff69b4 solid 4px;
-}
-
-.c5 {
-    animation-delay: 2.3s;
-}
-
-.scroll-downs {
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-    left: 0;
-    margin: 0 auto;
-    width :34px;
-    height: 55px;
-}
-
-.mousey {
-    width: 3px;
-    padding: 10px 13px;
-    height: 35px;
-    border: 4px solid hotpink;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
-
-.scroller {
-    width: 4px;
-    height: 12px;
-    border-radius: 25%;
-    background-color: hotpink;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-}
-
-@keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
-}
-/* Hero end */
-
-/* About me */
-.about-me-section {
-    width: 100vw;
-    height: 100vh;
-    background-color: hotpink;
-}
-
-
-.skills-section {
-    width: 100vw;
-    height: 100vh;
-    background-color: #141414;
-}
-
-.projects-section {
-    width: 100vw;
-    height: 100vh;
-    background-color: hotpink;
-}
-
-.contact-me-section {
-    width: 100vw;
-    height: 100vh;
-    background-color: #141414;
-}
 
 
 
@@ -319,44 +149,12 @@ span:hover {
     margin-bottom: 5px;
   }
   
-  /* About Me, Experience, and Projects Section */
-.about-me-section, .experience-section, .projects-section {
-    width: 100vw;
-    min-height: 100vh;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .section-container {
-    max-width: 800px;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    color: hotpink;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 1.8rem;
-    color: hotpink;
-    margin-bottom: 10px;
-  }
-  
-  h4 {
-    font-size: 1.4rem;
-    color: rgb(114, 114, 114);
-    margin-bottom: 5px;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    color: rgb(114, 114, 114);
-    margin-bottom: 20px;
-    text-align: justify;
-  }
+
+
+
+
+
+
   
   .date {
     font-size: 1.1rem;
@@ -378,94 +176,37 @@ span:hover {
   }
   
    
-  .about-me-section {
+  /* .about-me-section {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .slider-container {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .slide {
-    flex-shrink: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  }
-  
-  .slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  }
-  
-  .slide-content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .slide-content h3 {
-    font-size: 1.5rem;
-    color: hotpink;
-    margin-bottom: 15px;
-  }
-  
-  .slide-content p {
-    font-size: 1.2rem;
-    color: rgb(114, 114, 114);
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-
+  } */
   
   
 
-/* ...previous CSS code... */
 
-.slider-control {
-  position: absolute;
-  top: 50%;
-  font-size: 2rem;
-  color: hotpink;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-  outline: none;
+.row {
+  max-width: 100%;
 }
 
-.slider-control.prev {
-  left: 10px;
-  transform: translateY(-50%);
+.col {
+  height: 100%;
+  width: 50%;
 }
 
-.slider-control.next {
-  right: 10px;
-  transform: translateY(-50%);
+.col img {
+   width: 100%;
+   height: auto;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
-
-  
+.form-container {
+  min-height: 100%;
+  margin: 100px;
+  border: hotpink solid 4px;
+}
