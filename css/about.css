@@ -1,3 +1,8 @@
+.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
 .slider-container {
   position: relative;
   width: 80%;
@@ -9,27 +14,6 @@
   display: flex;
   width: 100%;
   transition: transform 0.3s ease-in-out;
-}
-  
-.slide {
-  flex-shrink: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #1f1f1f;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .slide-content {
@@ -56,21 +40,16 @@
 }
 
 .slider-control.prev {
-  left: 10px;
+  left: 30px;
   transform: translateY(-50%);
 }
 
 .slider-control.next {
-  right: 10px;
+  right: 30px;
   transform: translateY(-50%);
 }
 
-
-
-
-
-
-.padding-50 {
+ .padding-80 {
   padding: 80px;
 }
 
@@ -82,48 +61,74 @@
   padding: 10px;
 }
 
-.slide-img {
+.slide-img-wrapper {
   position: relative;
   width: 70%;
   height: 100%;
   overflow: hidden;
-}
-
-/* .diagonal-div {
-  position: relative;
-  width: 30%;
-  height: 100%;
-  background-color: #333;
-  overflow: hidden;
-}
-
-.diagonal-div::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
   transform-origin: bottom right;
   transform: skewX(15deg);
-} */
+}
+
+.slide-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom right;
+  transform: skewX(-15deg);
+}
 
 .diagonal-div {
   position: absolute;
   margin: 10px 10px 20px 0;
-  padding: 30px;
+  padding: 70px;
   top: 0;
   right: 0;
   width: 40%;
   height: calc(100% - 20px);
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%);
-  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28.5% 100%);
+  text-align: right;
+}
+
+.baking-container {
+  flex-direction: row-reverse;
+}
+
+.baking-container .diagonal-div {
+  left: 0;
+  right: auto;
+  margin-left: 10px;
+  clip-path: polygon(0 0, 100% 0, 71.5% 100%, 0 100%);
+  text-align: left;
+  padding: 70px;
+}
+
+.baking-container .diagonal-div p {
+  width: 300px;
+}
+
+.baking-container .slide-img-wrapper {
+  transform-origin: bottom left;
+  transform: skewX(-15deg);
+  margin-left: auto;
+}
+
+.baking-container .slide-img {
+  right: 0;
+  left: auto;
+  transform-origin: bottom left;
+  transform: skewX(15deg);
+}
+.slide-img.baking {
+  display: flex;
+  justify-content: flex-end;
 }
 
 
-.image {
+.exotic-pet-image, 
+.baking-image, 
+.family-image  {
   position: absolute;
   top: 0;
   left: 0;
@@ -131,36 +136,76 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  transform-origin: bottom right;
-  transform: skewX(15deg);
   opacity: 0;
   animation: imageSlider 16s infinite;
 }
 
-.image1 {
-  background-image: url('https://images.theconversation.com/files/417362/original/file-20210823-27-1qatupq.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop');
+.chameleon-image {
+  background-image: url('https://www.aquarium-berlin.de/fileadmin/_processed_/4/d/csm_Chameleon-Aquarium-Berlin_04b3cc9aa7.jpg');
   animation-delay: 0s;
 }
-.image2 {
-  background-image: url('https://www.canr.msu.edu/contentAsset/image/43e68b88-c4a2-438b-b83b-4f0a2eed5460/fileAsset/filter/Resize,Jpeg/resize_w/750/jpeg_q/80');
+.snake-image {
+  background-image: url('https://www.vetcentre.net.au/wp-content/uploads/2019/11/Snakes-and-Pets.jpg');
   animation-delay: 4s;
 }
-.image3 {
-  background-image: url('https://www.everythingreptiles.com/wp-content/uploads/2020/04/Most-Popular-Pet-Snakes.jpg');
+.sscorpio-image {
+  background-image: url('https://i.ytimg.com/vi/0pIEr4vGUsc/maxresdefault.jpg');
   animation-delay: 8s;
 }
-.image4 {
-  background-image: url('https://onceinawild.com/wp-content/uploads/2021/02/Matilda1.jpg');
+.tarantula-image {
+  background-image: url('https://cdn-www.terminix.com/-/media/Feature/Terminix/Articles/pet-tarantula.jpg?rev=e56b42e714734c71a96a37e47e84f716');
+  animation-delay: 12s;
+}
+
+.baking-image1 {
+  background-image: url('https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2022-12/mocha-whoopie-pies-2_0921.jpg?itok=1YQI7Ba9');
+  animation-delay: 0s;
+}
+.baking-image2 {
+  background-image: url('https://www.breadahead.com/wp/wp-content/uploads/Baking-Courses-London.jpeg');
+  animation-delay: 4s;
+}
+.baking-image3 {
+  background-image: url('https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/ba17854b-de30-4e80-9e49-4709e9dce12c/Carrot-Cake-Tray-Bake-SQUARE-4.jpg');
+  animation-delay: 8s;
+}
+.baking-image4 {
+  background-image: url('https://img.delicious.com.au/A08qqDe8/del/2021/01/lamington-cheesecake-144751-2.jpg');
+  animation-delay: 12s;
+}
+
+.family-image1 {
+  background-image: url('https://cf.ltkcdn.net/family/images/std/200821-800x533r1-family.jpg');
+  animation-delay: 0s;
+}
+.family-image2 {
+  background-image: url('https://lh6.googleusercontent.com/UHvV6HlSDH9A9v4XWzyn7b8BhYfT2WIcCCaLYn42949Mry1fbIpICZQR2lVVHrdbIaJY82gSVud9_UCEg8_uFsQM3s3OEqopEBysPenmb1L7WAUKbk_2boHnOnizaGoxJx1SMGHLznzbjkACfphOhKvVdH-EJr4iMBDiuaIJActaBTh8LGI8v-MH8sAarnb8y94ZApv7fQ');
+  animation-delay: 4s;
+}
+.family-image3 {
+  background-image: url('https://www.bonobology.com/wp-content/uploads/2020/11/Family-ValuesThat-Help-You-Forever-In-Life.jpg');
+  animation-delay: 8s;
+}
+.family-image4 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNswsS2NZGVutmKgBpxigUcVIg8dEribEGw&usqp=CAU');
   animation-delay: 12s;
 }
 
 @keyframes imageSlider {
-  0%, 100% {
+  0%, 70% {
     opacity: 0;
   }
-  20%, 80% {
+  6.25%, 18.75% {
     opacity: 1;
   }
 }
 
+
+
+
+.slide-content-right {
+  width: 350px;
+  text-align: right;
+  margin-left: 205px;
+}
 

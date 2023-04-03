@@ -47,7 +47,7 @@ function automaticSlider() {
   slideIndex++;
   if (slideIndex >= slides.length) slideIndex = 0;
   updateSlides();
-  setTimeout(automaticSlider, 5000); // Change the time in milliseconds for slide duration
+  setTimeout(automaticSlider, 16000); // Change the time in milliseconds for slide duration
 }
 
 // Start the slider
