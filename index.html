@@ -11,9 +11,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-  </head>
 
-    <title>Nick's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+  <title>Nick's Portfolio</title>
 </head>
 <body>
   <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
@@ -68,44 +69,10 @@
         </div>
       </section>
 
-      <section id="about-me" class="about-me-section bg-pink padding-80 exotic-container">
+      <section id="interests" class="interests-section bg-pink padding-80 exotic-container">
         <div class="container-fluid">
-        <!-- Exotic Pets container -->
-        <div class="slide about-me-container">
-          <div class="slide-img-wrapper">
-            <div class="slide-img exotic-pets">
-              <div class="exotic-pet-image chameleon-image"></div>
-              <div class="exotic-pet-image snake-image"></div>
-              <div class="exotic-pet-image sscorpio-image"></div>
-              <div class="exotic-pet-image tarantula-image"></div>
-            </div>
-          </div>
-          <div class="diagonal-div bg-dark">
-            <h3 class="pink-font">Exotic Pets</h3>
-            <p class="slide-content-right">One of the things I love about exotic pets is that they are so different from the usual cats and dogs that people usually keep as pets. Each one has its unique needs and personalities, and it's a great opportunity to learn about different species and their habitats. My collection included some rare and hard-to-find species, and it was always a thrill to see them thrive under my care.
-              <br><br>
-              Unfortunately, due to various circumstances, I had to give up my collection. However, I still have a deep passion for exotic animals and love learning about them. I'm hoping that someday soon, I'll be able to start a new collection and share my love of these creatures with others.</p>
-          </div>
-        </div> 
-
-        <!-- Baking container --> 
-        <div class="slide about-me-container baking-container">
-          <div class="diagonal-div bg-dark">
-            <h3 class="pink-font">Baking</h3>
-            <p>Baking is a creative outlet that I'm truly passionate about. There's nothing quite like whipping up a scrumptious dessert from scratch and seeing the joy on people's faces when they take that first delicious bite. Over the years, I've crafted some truly impressive birthday cakes, such as a Nike trainer cake, a pirate ship cake, and even a toilet roll cake (which was an inside joke with a friend). I've also experimented with wedding cakes, which require a lot of patience and skill, but the final product is always a sight to behold. Baking brings me so much joy and allows me to express my creativity in the sweetest way possible.</p>
-          </div>
-          <div class="slide-img-wrapper">
-            <div class="slide-img baking">
-              <div class="baking-image baking-image1"></div>
-              <div class="baking-image baking-image2"></div>
-              <div class="baking-image baking-image3"></div>
-              <div class="baking-image baking-image4"></div>
-            </div>
-          </div>
-        </div>
-
         <!-- Family container -->
-        <div class="slide about-me-container family-container">
+        <div class="slide interests-container family-container rounded">
           <div class="slide-img-wrapper">
             <div class="slide-img family">
               <div class="family-image family-image1"></div>
@@ -122,51 +89,197 @@
           </div>
         </div>
 
+        <!-- Baking container --> 
+        <div class="slide interests-container baking-container">
+          <div class="diagonal-div bg-dark">
+            <h3 class="pink-font">Baking</h3>
+            <p>Baking is a creative outlet that I'm truly passionate about. There's nothing quite like whipping up a scrumptious dessert from scratch and seeing the joy on people's faces when they take that first delicious bite. Over the years, I've crafted some truly impressive birthday cakes, such as a Nike trainer cake, a pirate ship cake, and even a toilet roll cake (which was an inside joke with a friend). I've also experimented with wedding cakes, which require a lot of patience and skill, but the final product is always a sight to behold. Baking brings me so much joy and allows me to express my creativity in the sweetest way possible.</p>
+          </div>
+          <div class="slide-img-wrapper">
+            <div class="slide-img baking">
+              <div class="baking-image baking-image1"></div>
+              <div class="baking-image baking-image2"></div>
+              <div class="baking-image baking-image3"></div>
+              <div class="baking-image baking-image4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exotic Pets container -->
+        <div class="slide interests-container">
+          <div class="slide-img-wrapper">
+            <div class="slide-img exotic-pets">
+              <div class="exotic-pet-image chameleon-image"></div>
+              <div class="exotic-pet-image snake-image"></div>
+              <div class="exotic-pet-image sscorpio-image"></div>
+              <div class="exotic-pet-image tarantula-image"></div>
+            </div>
+          </div>
+          <div class="diagonal-div bg-dark">
+            <h3 class="pink-font">Exotic Pets</h3>
+            <p class="slide-content-right">One of the things I love about exotic pets is that they are so different from the usual cats and dogs that people usually keep as pets. Each one has its unique needs and personalities, and it's a great opportunity to learn about different species and their habitats. My collection included some rare and hard-to-find species, and it was always a thrill to see them thrive under my care.
+              <br><br>
+              Unfortunately, due to various circumstances, I had to give up my collection. However, I still have a deep passion for exotic animals and love learning about them. I'm hoping that someday soon, I'll be able to start a new collection and share my love of these creatures with others.</p>
+          </div>
+        </div> 
+
         <button class="slider-control prev" onclick="moveSlides(-1)">&#10094;</button>
         <button class="slider-control next" onclick="moveSlides(1)">&#10095;</button>
         </div>
       </section>
       
-      <section id="skills" class="skills-section">
-        <div class="container-fluid">
-          <div class="row">
-        <h2>SKILLS</h2>
-        <div class="most-important-skills">
-          <h3>Most important skills</h3>
-          <p>Anything else is a bonus!</p><br><br>
-          <div class="skill-category">
-            <h4>ADEPT</h4>
-            <p>Quick learner with the ability to rapidly acquire and apply new skills and knowledge.</p>
-          </div>
-          <div class="skill-category">
-            <h4>PHILOMATH</h4>
-            <p>Eager to learn and explore new technologies, programming languages, and tools.</p>
-          </div>
-          <div class="skill-category">
-            <h4>SO-LU-TION-IST</h4>
-            <p>Excellent problem-solving skills, with a focus on finding creative and efficient solutions.</p>
-          </div>
-          <div class="skill-category">
-            <h4>MALLEABLE</h4>
-            <p>Highly adaptable to new situations and environments, with a focus on continuous improvement.</p>
+      <section id="skills" class="skills-section py-5">
+        <div class="container">
+          <h1 class="text-center mb-4 pink-font">SKILLS</h1>
+          <div class="most-important-skills mb-4">
+            <div class="row">
+              <h3 class="pink-font">My most valuable skills</h3>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <div class="skill-category d-flex flex-column rounded pink-shadow bg-pink">
+                  <h4 class="dark-font">ADEPT</h4>
+                  <p class="dark-font">Quick learner with the ability to rapidly acquire and apply new skills and knowledge.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <div class="skill-category d-flex flex-column rounded pink-shadow bg-pink">
+                  <h4 class="dark-font">PHILOMATH</h4>
+                  <p class="dark-font">Eager to learn and explore new technologies, programming languages, and tools.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <div class="skill-category d-flex flex-column rounded pink-shadow bg-pink">
+                  <h4 class="dark-font">SO-LU-TION-IST</h4>
+                  <p class="dark-font">Excellent problem-solving skills, with a focus on finding creative and efficient solutions.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <div class="skill-category d-flex flex-column rounded pink-shadow bg-pink">
+                  <h4 class="dark-font">MALLEABLE</h4>
+                  <p class="dark-font">Highly adaptable to new situations and environments, with a focus on continuous improvement.</p>
+                </div>
+              </div>
+              <p class="pink-font">Everything else is a bonus!</p>
+              
+            </div>
           </div>
         </div>
-        <div class="technical-skills">
-          <h3>Technical Skills</h3>
-          <p>Frontend: HTML – CSS – JavaScript – ReactJS – Bootstrap</p>
-          <p>Backend: NodeJS – ExpressJS – MongoDB – PostgreSQL – Ruby on Rails – Hubl</p>
-          <h3>Tools & Platforms</h3>
-          <p>GitHub – HubSpot – SharePoint – Power Automate – DevOps – Heroku – Firebase</p>
-          <h3>Soft Skills</h3>
-          <p>Problem-solving – Creative – Adaptable – Thinking outside the box – Communication</p>
-          <p>Critical thinking – Customer service</p>
+          <div class="container-fluid">
+        <div class="skills-wrapper">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="technical-skills p-4 rounded bg-pink align-items-start pink-shadow">
+                <h5 class="dark-font">Frontend</h5>
+                <div class="skill-icons">
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="HTML">
+                  <img class="skill-icon" src="assets/coding-icons/html.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="CSS">
+                  <img class="skill-icon" src="assets/coding-icons/css.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
+                  <img class="skill-icon" src="assets/coding-icons/javascript.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="ReactJS">
+                  <img class="skill-icon" src="assets/coding-icons/react.png" alt="">
+                </div>
+              
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Huble">
+                  <img class="skill-icon" src="assets/coding-icons/hubspot.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap">
+                  <img class="skill-icon" src="assets/coding-icons/bootstrap.png" alt="">
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="technical-skills p-4 rounded bg-pink align-items-start pink-shadow">
+                <h5 class="dark-font">Backend</h5>
+                <div class="skill-icons">
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Ruby on Rails">
+                  <img class="skill-icon" src="assets/coding-icons/rails.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS">
+                  <img class="skill-icon" src="assets/coding-icons/node.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="MongoDB">
+                  <img class="skill-icon" src="assets/coding-icons/mongo.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSQL">
+                  <img class="skill-icon" src="assets/coding-icons/postgres.png" alt="">
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="technical-skills p-4 rounded bg-pink align-items-start pink-shadow">
+                <h5 class="dark-font">Tools</h5>
+                <div class="skill-icons">
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                  <img class="skill-icon" src="assets/coding-icons/git.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="HubSpot">
+                  <img class="skill-icon" src="assets/coding-icons/hubspot.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Heroku">
+                  <img class="skill-icon" src="assets/coding-icons/heroku.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Firebase">
+                  <img class="skill-icon" src="assets/coding-icons/firebase.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="DevOps">
+                  <img class="skill-icon" src="assets/coding-icons/azure-devops.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Power Automate">
+                  <img class="skill-icon" src="https://www.northware.mx/wp-content/uploads/2022/09/northware-microsoft-power-automate-logo.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Power BI">
+                  <img class="skill-icon" src="assets/coding-icons/bi.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="SharePoint">
+                  <img class="skill-icon" src="assets/coding-icons/sharepoint.png" alt="">
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="technical-skills p-4 rounded bg-pink align-items-start pink-shadow">
+                <h5 class="dark-font">Soft Skills</h5>
+                <div class="skill-icons">
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Problem-solving">
+                  <img class="skill-icon" src="assets/coding-icons/problem.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Creative">
+                  <img class="skill-icon" src="assets/coding-icons/creative.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Adaptable">
+                  <img class="skill-icon" src="assets/coding-icons/adapter.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Thinking Outside The Box">
+                  <img class="skill-icon" src="assets/coding-icons/outside.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Communication">
+                  <img class="skill-icon" src="assets/coding-icons/coms.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Critical Thinking">
+                  <img class="skill-icon" src="assets/coding-icons/crit.png" alt="">
+                </div>
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Customer Thinking">
+                  <img class="skill-icon" src="assets/coding-icons/customer.png" alt="">
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </section>
       
       
-      <section id="projects" class="projects-section">
+      
+      
+      
+      
+      <section id="projects" class="projects-section bg-pink">
         <div class="section-container">
           <h2>Projects</h2>
           <div class="project-item">
@@ -178,6 +291,66 @@
           <!-- Add more project items here -->
         </div>
       </section>
+
+      <section id="interests" class="interests-section bg-pink padding-80 exotic-container">
+        <div class="container-fluid">
+        <!-- Family container -->
+        <div class="slide interests-container family-container rounded">
+          <div class="slide-img-wrapper">
+            <div class="slide-img family">
+              <div class="family-image family-image1"></div>
+              <div class="family-image family-image2"></div>
+              <div class="family-image family-image3"></div>
+              <div class="family-image family-image4"></div>
+            </div>
+          </div>
+          <div class="diagonal-div bg-dark">
+            <h3 class="pink-font">Family</h3>
+            <p class="slide-content-right">Family is the backbone of my life. It's what drives me to be the best version of myself, and to work hard to provide for my loved ones. My wife and I share a deep bond, and our relationship has only grown stronger with time. We're partners in every sense of the word, and I'm so lucky to have her by my side. Our daughter is the light of our lives, and watching her grow and learn is a constant source of wonder and amazement.
+              <br><br>
+              We cherish the time we spend together, whether it's cooking dinner as a family or taking long walks in the park. Our bond is unbreakable, and I know that no matter what challenges come our way, we'll always be there for each other. Being a father and a husband is the greatest privilege I could ever ask for, and I'm grateful every day for the love and support of my family.</p>
+          </div>
+        </div>
+
+        <!-- Baking container --> 
+        <div class="slide interests-container baking-container">
+          <div class="diagonal-div bg-dark">
+            <h3 class="pink-font">Baking</h3>
+            <p>Baking is a creative outlet that I'm truly passionate about. There's nothing quite like whipping up a scrumptious dessert from scratch and seeing the joy on people's faces when they take that first delicious bite. Over the years, I've crafted some truly impressive birthday cakes, such as a Nike trainer cake, a pirate ship cake, and even a toilet roll cake (which was an inside joke with a friend). I've also experimented with wedding cakes, which require a lot of patience and skill, but the final product is always a sight to behold. Baking brings me so much joy and allows me to express my creativity in the sweetest way possible.</p>
+          </div>
+          <div class="slide-img-wrapper">
+            <div class="slide-img baking">
+              <div class="baking-image baking-image1"></div>
+              <div class="baking-image baking-image2"></div>
+              <div class="baking-image baking-image3"></div>
+              <div class="baking-image baking-image4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exotic Pets container -->
+        <div class="slide interests-container">
+          <div class="slide-img-wrapper">
+            <div class="slide-img exotic-pets">
+              <div class="exotic-pet-image chameleon-image"></div>
+              <div class="exotic-pet-image snake-image"></div>
+              <div class="exotic-pet-image sscorpio-image"></div>
+              <div class="exotic-pet-image tarantula-image"></div>
+            </div>
+          </div>
+          <div class="diagonal-div bg-dark">
+            <h3 class="pink-font">Exotic Pets</h3>
+            <p class="slide-content-right">One of the things I love about exotic pets is that they are so different from the usual cats and dogs that people usually keep as pets. Each one has its unique needs and personalities, and it's a great opportunity to learn about different species and their habitats. My collection included some rare and hard-to-find species, and it was always a thrill to see them thrive under my care.
+              <br><br>
+              Unfortunately, due to various circumstances, I had to give up my collection. However, I still have a deep passion for exotic animals and love learning about them. I'm hoping that someday soon, I'll be able to start a new collection and share my love of these creatures with others.</p>
+          </div>
+        </div> 
+
+        <button class="slider-control prev" onclick="moveSlides(-1)">&#10094;</button>
+        <button class="slider-control next" onclick="moveSlides(1)">&#10095;</button>
+        </div>
+      </section>
+      
       <section id="contact-me" class="contact-me-section">
         <div class="container-fluid">
           <div class="row">

@@ -55,3 +55,24 @@ updateSlides();
 automaticSlider();
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    tooltipTriggerEl.addEventListener('mouseover', function () {
+      tooltipTriggerEl.classList.add('shake-animation');
+      setTimeout(function () {
+        tooltipTriggerEl.classList.remove('shake-animation');
+      }, 200);
+    });
+  });
+
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+});
+
+
+
+
+
