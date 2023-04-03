@@ -1,0 +1,25 @@
+.projects-section {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .project {
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  .project:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card {
+    padding: 0 15px;
+  }
+ 
+  

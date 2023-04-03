@@ -34,7 +34,7 @@
             <a class="nav-link pink-font" href="#projects">PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pink-font" href="#experience">EXPERIENCE</a>
+            <a class="nav-link pink-font" href="#interests">INTERESTS</a>
           </li>
           <li class="nav-item"> 
             <a class="nav-link pink-font" href="#contact-me">CONTACT ME</a>
@@ -264,7 +264,7 @@
                 <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Critical Thinking">
                   <img class="skill-icon" src="assets/coding-icons/crit.png" alt="">
                 </div>
-                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Customer Thinking">
+                <div class="skill-icon-wrapper bg-dark p-2 rounded d-flex flex-column dark-shadow shake-animation"  data-bs-toggle="tooltip" data-bs-placement="top" title="Customer Service">
                   <img class="skill-icon" src="assets/coding-icons/customer.png" alt="">
                 </div>
               </div>
@@ -279,78 +279,163 @@
       
       
       
-      <section id="projects" class="projects-section bg-pink">
-        <div class="section-container">
-          <h2>Projects</h2>
-          <div class="project-item">
-            <h3>Project 1: Tic-Tac-Toe Game</h3>
-            <p>
-              In my initial project, a tic-tac-toe game built using HTML, CSS, and Vanilla JavaScript, I acquired proficiency in key front-end technologies such as Git, Command Line, HTML, CSS, and Vanilla JavaScript, while also demonstrating my ability to build a functional and intuitive game using only these core technologies.
-            </p>
-          </div>
-          <!-- Add more project items here -->
-        </div>
-      </section>
-
-      <section id="interests" class="interests-section bg-pink padding-80 exotic-container">
-        <div class="container-fluid">
-        <!-- Family container -->
-        <div class="slide interests-container family-container rounded">
-          <div class="slide-img-wrapper">
-            <div class="slide-img family">
-              <div class="family-image family-image1"></div>
-              <div class="family-image family-image2"></div>
-              <div class="family-image family-image3"></div>
-              <div class="family-image family-image4"></div>
+      <section id="projects" class="projects-section py-5 bg-pink">
+        <div class="container">
+          <h1 class="text-center mb-4 dark-font">PROJECTS</h1>
+          <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-6 mb-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+              <div class="project p-4 rounded bg-dark dark-shadow d-flex flex-column align-items-center">
+                <h5 class="pink-font">Project 1: Tic Tac Toe</h5>
+                <p>This is a simple Tic Tac Toe game built with HTML, CSS, and JavaScript. The game allows two players to take turns marking spaces on a 3x3 grid with their respective symbols (X or O). The objective of the game is for a player to get three of their symbols in a row (horizontally, vertically, or diagonally) before their opponent does.</p>
+              </div>
             </div>
-          </div>
-          <div class="diagonal-div bg-dark">
-            <h3 class="pink-font">Family</h3>
-            <p class="slide-content-right">Family is the backbone of my life. It's what drives me to be the best version of myself, and to work hard to provide for my loved ones. My wife and I share a deep bond, and our relationship has only grown stronger with time. We're partners in every sense of the word, and I'm so lucky to have her by my side. Our daughter is the light of our lives, and watching her grow and learn is a constant source of wonder and amazement.
-              <br><br>
-              We cherish the time we spend together, whether it's cooking dinner as a family or taking long walks in the park. Our bond is unbreakable, and I know that no matter what challenges come our way, we'll always be there for each other. Being a father and a husband is the greatest privilege I could ever ask for, and I'm grateful every day for the love and support of my family.</p>
-          </div>
-        </div>
 
-        <!-- Baking container --> 
-        <div class="slide interests-container baking-container">
-          <div class="diagonal-div bg-dark">
-            <h3 class="pink-font">Baking</h3>
-            <p>Baking is a creative outlet that I'm truly passionate about. There's nothing quite like whipping up a scrumptious dessert from scratch and seeing the joy on people's faces when they take that first delicious bite. Over the years, I've crafted some truly impressive birthday cakes, such as a Nike trainer cake, a pirate ship cake, and even a toilet roll cake (which was an inside joke with a friend). I've also experimented with wedding cakes, which require a lot of patience and skill, but the final product is always a sight to behold. Baking brings me so much joy and allows me to express my creativity in the sweetest way possible.</p>
-          </div>
-          <div class="slide-img-wrapper">
-            <div class="slide-img baking">
-              <div class="baking-image baking-image1"></div>
-              <div class="baking-image baking-image2"></div>
-              <div class="baking-image baking-image3"></div>
-              <div class="baking-image baking-image4"></div>
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-6 mb-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+              <div class="project p-4 rounded bg-dark dark-shadow d-flex flex-column align-items-center">
+                <h5 class="pink-font">Project 2: Recipe App</h5>
+                <p>This project is a web application that allows users to search for and save recipes. It was completed as part of a frontend web development course and utilizes technologies such as React and Axios to interact with a 3rd party API to fetch recipe data.</p>
+              </div>
             </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-6 mb-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+              <div class="project p-4 rounded bg-dark dark-shadow d-flex flex-column align-items-center">
+                <h5 class="pink-font">Project 3: Social Media App</h5>
+                <p>This project was completed as part of a team project during a software engineering course. The project is a backend server application that is built with Node.js and Express.js and uses MongoDB and Mongoose for database storage. The goal of the project is to provide a social platform for users to create and manage their posts and connect with friends.</p>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-6 mb-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal4">
+              <div class="project p-4 rounded bg-dark dark-shadow d-flex flex-column align-items-center">
+                <h5 class="pink-font">Project 4: Dev Helper</h5>
+                <p>CodeBase is a social platform for coders to share, learn and connect with other coders. The app is built using Ruby on Rails and uses a PostgreSQL database. The app allows users to sign up, create a profile, add code snippets to their profile, post questions, and engage in conversations.</p>
+              </div>
+            </div>
+      
           </div>
         </div>
-
-        <!-- Exotic Pets container -->
-        <div class="slide interests-container">
-          <div class="slide-img-wrapper">
-            <div class="slide-img exotic-pets">
-              <div class="exotic-pet-image chameleon-image"></div>
-              <div class="exotic-pet-image snake-image"></div>
-              <div class="exotic-pet-image sscorpio-image"></div>
-              <div class="exotic-pet-image tarantula-image"></div>
+      
+        <!-- Project Modal 1 -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title pink-font" id="projectModalLabel1">Project 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Slideshow or video here -->
+              </div>
             </div>
           </div>
-          <div class="diagonal-div bg-dark">
-            <h3 class="pink-font">Exotic Pets</h3>
-            <p class="slide-content-right">One of the things I love about exotic pets is that they are so different from the usual cats and dogs that people usually keep as pets. Each one has its unique needs and personalities, and it's a great opportunity to learn about different species and their habitats. My collection included some rare and hard-to-find species, and it was always a thrill to see them thrive under my care.
-              <br><br>
-              Unfortunately, due to various circumstances, I had to give up my collection. However, I still have a deep passion for exotic animals and love learning about them. I'm hoping that someday soon, I'll be able to start a new collection and share my love of these creatures with others.</p>
+        </div>
+      
+         <!-- Project Modal 2 -->
+         <div class="modal fade" id="projectModal2" tabindex="-2" aria-labelledby="projectModalLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title pink-font" id="projectModalLabel2">Project 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Slideshow or video here -->
+              </div>
+            </div>
           </div>
-        </div> 
+        </div>
 
-        <button class="slider-control prev" onclick="moveSlides(-1)">&#10094;</button>
-        <button class="slider-control next" onclick="moveSlides(1)">&#10095;</button>
+         <!-- Project Modal 3 -->
+         <div class="modal fade" id="projectModal3" tabindex="-3" aria-labelledby="projectModalLabel3" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title pink-font" id="projectModalLabel3">Project 3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Slideshow or video here -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Modal 4 -->
+        <div class="modal fade" id="projectModal4" tabindex="-4" aria-labelledby="projectModalLabel4" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title pink-font" id="projectModalLabel4">Project 4</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Slideshow or video here -->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       
+      
+
+      <section id="interests" class="interests-section bg-dark padding-80 exotic-container">
+        <div class="container-fluid">
+          <!-- Family container -->
+          <div class="slide interests-container family-container rounded active">
+            <div class="slide-img-wrapper">
+              <div class="slide-img family">
+                <div class="family-image family-image1"></div>
+                <div class="family-image family-image2"></div>
+                <div class="family-image family-image3"></div>
+                <div class="family-image family-image4"></div>
+              </div>
+            </div>
+            <div class="diagonal-div bg-pink">
+              <h3 class="dark-font">Family</h3>
+              <p class="slide-content-right dark-font">Family is the backbone of my life. It's what drives me to be the best version of myself, and to work hard to provide for my loved ones. My wife and I share a deep bond, and our relationship has only grown stronger with time. We're partners in every sense of the word, and I'm so lucky to have her by my side. Our daughter is the light of our lives, and watching her grow and learn is a constant source of wonder and amazement.
+                <br><br>
+                We cherish the time we spend together, whether it's cooking dinner as a family or taking long walks in the park. Our bond is unbreakable, and I know that no matter what challenges come our way, we'll always be there for each other. Being a father and a husband is the greatest privilege I could ever ask for, and I'm grateful every day for the love and support of my family.</p>
+            </div>
+          </div>
+      
+          <!-- Baking container --> 
+          <div class="slide interests-container baking-container">
+            <div class="diagonal-div bg-pink">
+              <h3 class="dark-font">Baking</h3>
+              <p class="dark-font">Baking is a creative outlet that I'm truly passionate about. There's nothing quite like whipping up a scrumptious dessert from scratch and seeing the joy on people's faces when they take that first delicious bite. Over the years, I've crafted some truly impressive birthday cakes, such as a Nike trainer cake, a pirate ship cake, and even a toilet roll cake (which was an inside joke with a friend). I've also experimented with wedding cakes, which require a lot of patience and skill, but the final product is always a sight to behold. Baking brings me so much joy and allows me to express my creativity in the sweetest way possible.</p>
+            </div>
+            <div class="slide-img-wrapper">
+              <div class="slide-img baking">
+                <div class="baking-image baking-image1"></div>
+                <div class="baking-image baking-image2"></div>
+                <div class="baking-image baking-image3"></div>
+                <div class="baking-image baking-image4"></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="slide interests-container">
+            <div class="slide-img-wrapper">
+              <div class="slide-img exotic-pets">
+                <div class="exotic-pet-image chameleon-image"></div>
+                <div class="exotic-pet-image snake-image"></div>
+                <div class="exotic-pet-image sscorpio-image"></div>
+                <div class="exotic-pet-image tarantula-image"></div>
+              </div>
+            </div>
+            <div class="diagonal-div bg-pink">
+              <h3 class="dark-font">Exotic Pets</h3>
+              <p class="slide-content-right dark-font">One of the things I love about exotic pets is that they are so different from the usual cats and dogs that people usually keep as pets. Each one has its unique needs and personalities, and it's a great opportunity to learn about different species and their habitats. My collection included some rare and hard-to-find species, and it was always a thrill to see them thrive under my care.
+                <br><br>
+                Unfortunately, due to various circumstances, I had to give up my collection. However, I still have a deep passion for exotic animals and love learning about them. I'm hoping that someday soon, I'll be able to start a new collection and share my love of these creatures with others.</p>
+            </div>
+          </div>
+        </div>
+      </section>  
+      
+
       <section id="contact-me" class="contact-me-section">
         <div class="container-fluid">
           <div class="row">
