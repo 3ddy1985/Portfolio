@@ -74,5 +74,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// Get the back-to-top button element
+const backToTopBtn = document.getElementById('back-to-top');
 
+// Function to handle scrolling to the top of the page
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Function to show or hide the back-to-top button depending on the scroll position
+function toggleBackToTopBtn() {
+  const heroSection = document.querySelector('.hero-section');
+  const heroSectionHeight = heroSection.offsetHeight;
+
+  if (window.pageYOffset > heroSectionHeight) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+}
+
+// Add an event listener to handle scroll events
+window.addEventListener('scroll', toggleBackToTopBtn);
 

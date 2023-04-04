@@ -168,19 +168,19 @@
   }
   
   .baking-image1 {
-    background-image: url('https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2022-12/mocha-whoopie-pies-2_0921.jpg?itok=1YQI7Ba9');
+    background-image: url('assets/images/interests_slider/unicorn.jpg');
     animation-delay: 0s;
   }
   .baking-image2 {
-    background-image: url('https://www.breadahead.com/wp/wp-content/uploads/Baking-Courses-London.jpeg');
+    background-image: url('assets/images/interests_slider/trainer.jpg');
     animation-delay: 4s;
   }
   .baking-image3 {
-    background-image: url('https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/ba17854b-de30-4e80-9e49-4709e9dce12c/Carrot-Cake-Tray-Bake-SQUARE-4.jpg');
+    background-image: url('assets/images/interests_slider/wedding.jpg');
     animation-delay: 8s;
   }
   .baking-image4 {
-    background-image: url('https://img.delicious.com.au/A08qqDe8/del/2021/01/lamington-cheesecake-144751-2.jpg');
+    background-image: url('assets/images/interests_slider/pirate.jpg');
     animation-delay: 12s;
   }
   

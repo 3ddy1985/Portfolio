@@ -138,3 +138,29 @@ h1, h2, h3, h4, h5 {
   margin: 100px;
   border: hotpink solid 4px;
 }
+
+
+
+
+
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+
+
+
+
