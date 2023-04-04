@@ -1,0 +1,8 @@
+.about-me-section {
+  padding: 80px;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+}
