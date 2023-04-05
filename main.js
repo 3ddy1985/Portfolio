@@ -160,7 +160,7 @@ var carousel = modal.querySelector('.modal-body');
 var swiper = new Swiper('.swiper-container', {
   loop: false,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {

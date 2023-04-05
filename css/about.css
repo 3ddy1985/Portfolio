@@ -6,3 +6,7 @@
   display: flex;
   justify-content: center;
 }
+
+.p-lg {
+  font-size: 24px;
+}

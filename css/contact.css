@@ -1,0 +1,38 @@
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212529;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section form {
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .form-button {
+    width: 200px;
+    height: 40px;
+    background-color: #21252900;
+    border: solid 1px hotpink;
+    color: hotpink;
+    margin-top: 10px;
+    border-radius: 7px;
+  }
+
+  .form-button:hover {
+    width: 200px;
+    height: 40px;
+    background-color: hotpink;
+    border: solid 1px hotpink;
+    color: #141414;
+    margin-top: 10px;
+  }
+
+
+  
