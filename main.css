@@ -6,6 +6,10 @@
 @import url(css/contact.css);
 @import url(css/interests.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #141414;
   color: rgb(114, 114, 114);
@@ -71,7 +75,15 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 2px 6px rgba(255, 105, 180, 0.719);
 }
 
+.nav-btm-border-pink:hover {
+  color: hotpink;
+  border-bottom: hotpink solid 1px;
+}
 
+.nav-btm-border-dark:hover {
+  color: #141414;
+  border-bottom: #141414 solid 1px;
+}
 
 
 

@@ -3,20 +3,9 @@
     width: 100%;
   }
   
-  .slider-container {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    overflow: hidden;
-  }
-    
-  .slider {
-    display: flex;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
 
-  .slide {
+
+  .interests-slide {
     display: none;
     width: 100%;
     transition: transform 0.3s ease-in-out;
@@ -168,36 +157,36 @@
   }
   
   .baking-image1 {
-    background-image: url('assets/images/interests_slider/unicorn.jpg');
+    background-image: url('https://i.ibb.co/J7Hsyhh/unicorn.jpg');
     animation-delay: 0s;
   }
   .baking-image2 {
-    background-image: url('assets/images/interests_slider/trainer.jpg');
+    background-image: url('https://i.ibb.co/bvvfHVN/trainer.jpg');
     animation-delay: 4s;
   }
   .baking-image3 {
-    background-image: url('assets/images/interests_slider/wedding.jpg');
+    background-image: url('https://i.ibb.co/kSNhFKr/wedding.jpg');
     animation-delay: 8s;
   }
   .baking-image4 {
-    background-image: url('assets/images/interests_slider/pirate.jpg');
+    background-image: url('https://i.ibb.co/PTVHZXV/pirate.jpg');
     animation-delay: 12s;
   }
   
   .family-image1 {
-    background-image: url('https://cf.ltkcdn.net/family/images/std/200821-800x533r1-family.jpg');
+    background-image: url('https://i.ibb.co/BNWzby9/group.jpg');
     animation-delay: 0s;
   }
   .family-image2 {
-    background-image: url('https://lh6.googleusercontent.com/UHvV6HlSDH9A9v4XWzyn7b8BhYfT2WIcCCaLYn42949Mry1fbIpICZQR2lVVHrdbIaJY82gSVud9_UCEg8_uFsQM3s3OEqopEBysPenmb1L7WAUKbk_2boHnOnizaGoxJx1SMGHLznzbjkACfphOhKvVdH-EJr4iMBDiuaIJActaBTh8LGI8v-MH8sAarnb8y94ZApv7fQ');
+    background-image: url('https://i.ibb.co/mRhv1JB/meavani.jpg');
     animation-delay: 4s;
   }
   .family-image3 {
-    background-image: url('https://www.bonobology.com/wp-content/uploads/2020/11/Family-ValuesThat-Help-You-Forever-In-Life.jpg');
+    background-image: url('https://i.ibb.co/FVYvBPk/avani.jpg');
     animation-delay: 8s;
   }
   .family-image4 {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNswsS2NZGVutmKgBpxigUcVIg8dEribEGw&usqp=CAU');
+    background-image: url('https://i.ibb.co/VwMFLzH/meavani2.jpg');
     animation-delay: 12s;
   }
   

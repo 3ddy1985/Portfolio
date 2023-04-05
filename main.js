@@ -1,3 +1,7 @@
+
+
+
+
 // Get all elements with the class "header-text"
 const headings = document.querySelectorAll(".header-text");
 
@@ -96,4 +100,92 @@ function toggleBackToTopBtn() {
 
 // Add an event listener to handle scroll events
 window.addEventListener('scroll', toggleBackToTopBtn);
+
+
+
+const nav = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('#hero-section, #about-me, #skills, #projects, #interests, #contact-me');
+
+function handleSectionIntersection(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      const isDark = id === 'hero-section' || id === 'skills' || id === 'interests';
+
+      nav.classList.toggle('bg-dark', isDark);
+      nav.classList.toggle('bg-pink', !isDark);
+
+      navLinks.forEach((navLink) => {
+        navLink.classList.toggle('pink-font', isDark);
+        navLink.classList.toggle('nav-btm-border-pink', isDark);
+        navLink.classList.toggle('dark-font', !isDark);
+        navLink.classList.toggle('nav-btm-border-dark', !isDark);
+      });
+    }
+  });
+}
+
+
+const observer = new IntersectionObserver(handleSectionIntersection, {
+  rootMargin: '0px 0px -100% 0px',
+  threshold: 0,
+});
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+
+navLinks.forEach((navLink) => {
+  navLink.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const targetId = navLink.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
+
+
+
+// Get the modal element
+var modal = document.getElementById('projectModal1');
+
+// Get the carousel element
+var carousel = modal.querySelector('.modal-body');
+
+var swiper = new Swiper('.swiper-container', {
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  slidesPerView: 1,
+  preloadImages: false,
+  virtualTranslate: false
+});
+
+
+
+
+
+// When the modal is shown, start the carousel autoplay
+modal.addEventListener('shown.bs.modal', function () {
+  swiper.autoplay.start();
+});
+
+// When the modal is hidden, stop the carousel autoplay
+modal.addEventListener('hidden.bs.modal', function () {
+  swiper.autoplay.stop();
+});
+
+
+
 
