@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.most-important-skills{
+  padding-top: 100px;
+}
+
 .skill-category {
     height: 200px;
     padding: 20px;
@@ -18,8 +22,6 @@
 }
 
 .technical-skills {
-    /* height: 200px; */
-    
     justify-content: space-around;
     height: 250px;
 }
@@ -36,7 +38,7 @@
 .skills-wrapper {
     margin: auto;
     padding: 0;
-    width: 90vw;
+    width: 95%;
 }
 
 .skill-icons {
@@ -86,3 +88,43 @@
     animation: shake 0.2s linear 1;
   }
   
+  @media only screen and (max-width: 1280px) {
+    .most-important-skills{
+      padding-top: 5px;
+    }
+    .skill-category {
+      height: 150px;
+      padding: 15px;
+      margin: 10px 0;
+  }
+  
+  .skill-category p {
+      padding-top: 0px;
+      font-size: 16px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .skill-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .skill-icon {
+    width: 40px;
+  }
+  .technical-skills {
+    justify-content: space-around;
+    height: 250px;
+    padding: 10px!important;
+  }
+  .mb-4 {
+    margin-bottom: 0px!important;
+  }
+}
